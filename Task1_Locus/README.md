@@ -50,7 +50,7 @@ JSON format data, unix timestamp and pressure values for past 3 days.
 
 2. Navigate to the path where python script is placed
 
-![path 01](images/path_01.jpg)
+![path](images/path_01.jpg)
 
 3. Execute the python script
 
@@ -66,7 +66,7 @@ python task1_pressure.py
 
 5. Output is displayed
 
-![output](images/output.jpg)
+![output](images/output_01.jpg)
 
 ## Logic for Code
 
