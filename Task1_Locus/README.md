@@ -45,22 +45,28 @@ JSON format data, unix timestamp and pressure values for past 3 days.
 ##### using command line
 
 1. Open Command Prompt / Terminal
+
 ![cmd](images/cmd.jpg)
 
 2. Navigate to the path where python script is placed
+
 ![path 01](images/path_01.jpg)
 
 3. Execute the python script
-    ```
-    python task1_pressure.py
-    ```
-    ![execute](images/execute.jpg)
+
+```
+python task1_pressure.py
+```
+
+![execute](images/execute.jpg)
 
 4. Enter the value of Latitude and Longitude
-    ![input](images/input.jpg)
 
-4. Output is displayed
-    ![output](images/output.jpg)
+![input](images/input.jpg)
+
+5. Output is displayed
+
+![output](images/output.jpg)
 
 ## Logic for Code
 
@@ -69,9 +75,11 @@ JSON format data, unix timestamp and pressure values for past 3 days.
 - Evaluate the Unix timestamp for current day's 04:00 AM.
 - Calculate unix timestamps for last 3 days
 - Call API https://openweathermap.org/api (**GET** request), with latitude, longitude, past three days timestamp (one day at a time) and appId.
+
     ```
     https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=12.9716&lon=77.5946&dt=1624582380&appid=78385f931961ae9b80060c70d2c7bf6f
     ```
+
 - Create an dictionary to store the output values.
 - Unix Timestamp and Pressure value received are stored in the dictionary.
 - JSON object is prepared for the dictionary and displayed as output.
